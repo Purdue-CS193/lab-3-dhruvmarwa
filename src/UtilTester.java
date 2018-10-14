@@ -4,6 +4,7 @@
 // you to run the test cases!
 
 import org.junit.*;
+
 import static org.junit.Assert.assertEquals;
 
 public class UtilTester {
@@ -12,13 +13,13 @@ public class UtilTester {
     @Test
     public void testSimpleDivision() {
         assertEquals(7, MathUtils.divideNumbers(21, 3), delta);
-        assertEquals(20032006, MathUtils.divideNumbers(80128024,4), delta);
+        assertEquals(20032006, MathUtils.divideNumbers(80128024, 4), delta);
         assertEquals(13, MathUtils.divideNumbers(169, 13), delta);
     }
 
     @Test
     public void testComplexDivision() {
-        assertEquals(0.142857, MathUtils.divideNumbers(3, 21),  delta);
+        assertEquals(0.142857, MathUtils.divideNumbers(3, 21), delta);
         assertEquals(6163694.153846, MathUtils.divideNumbers(80128024, 13), delta);
         assertEquals(0.384615, MathUtils.divideNumbers(5, 13), delta);
     }
@@ -46,9 +47,9 @@ public class UtilTester {
 
     @Test
     public void testComplexNegativePower() {
-        assertEquals(1.0/14348907, MathUtils.raiseToPower(3, -15), delta);
-        assertEquals(1.0/1419857, MathUtils.raiseToPower(17, -5), delta);
-        assertEquals(1.0/62748517, MathUtils.raiseToPower(13, -7), delta);
+        assertEquals(1.0 / 14348907, MathUtils.raiseToPower(3, -15), delta);
+        assertEquals(1.0 / 1419857, MathUtils.raiseToPower(17, -5), delta);
+        assertEquals(1.0 / 62748517, MathUtils.raiseToPower(13, -7), delta);
     }
 
     @Test
